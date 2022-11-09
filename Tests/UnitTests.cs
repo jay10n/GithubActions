@@ -87,10 +87,6 @@ namespace GithubActionsLab
             Assert.AreEqual(.5, Program.Divide("1", "2"));
             Assert.AreEqual(3, Program.Divide("6", "2"));
             Assert.AreEqual(-5, Program.Divide("-10", "2"));
-            Assert.AreEqual(11, Program.Divide("-33", "-3"));
-            Assert.AreEqual(double.PositiveInfinity, Program.Divide("5", "0"));
-            Assert.AreEqual(double.NegativeInfinity, Program.Divide("-5", "0"));
-
         }
 
         [Test]
@@ -116,10 +112,6 @@ namespace GithubActionsLab
             Assert.AreEqual(1, Program.Power("1", "2"));
             Assert.AreEqual(9, Program.Power("3", "2"));
             Assert.AreEqual(16, Program.Power("2", "4"));
-            Assert.AreEqual(16, Program.Power("-2", "4"));
-            Assert.AreEqual(-8, Program.Power("-2", "3"));
-            Assert.AreEqual(1, Program.Power("5", "0"));
-            Assert.AreEqual(10, Program.Power("10", "2"));
         }
 
         [Test]
